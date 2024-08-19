@@ -25,7 +25,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className='grid grid-flow-col font-spartan'>
+                    <div className='flex flex-wrap md:grid md:grid-flow-col font-spartan'>
                         <div className=" w-full p-6 md:w-1/2 lg:w-2/12">
                             <div className="h-full ">
                                 <h3 className="tracking-px mb-3 text-[32px] font-semibold  text-white">

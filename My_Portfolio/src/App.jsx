@@ -1,6 +1,5 @@
-import { Header, Footer, Home, About, Work } from "./components"
+import { Header, Footer } from "./components"
 import { Outlet } from "react-router-dom"
-import { useRef } from "react"
 import ScrollToTop from "./components/ScrollToTop"
 
 
@@ -11,11 +10,6 @@ function App() {
         <ScrollToTop />
         <div className="flex justify-center ">
           <Header />
-        </div>
-        <div>
-          <Home />
-          <About />
-          <Work />
         </div>
         <main>
           <Outlet />

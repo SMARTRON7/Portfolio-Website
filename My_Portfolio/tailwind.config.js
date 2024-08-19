@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         darkblue: "#090749",
-        midblue: "#182788",
+        midblue: "#0C175F",
         midpurple: "#8C89E7",
         lightpurple: "#E7E9F5",
         lightbeige: "#D1D1D1"

@@ -29,6 +29,7 @@ function Header() {
 
     ]
     const { pathname } = useLocation();
+    const hideAboutAndWork = pathname === '/contact';
 
     // Automatically scrolls to top whenever pathname changes
     useEffect(() => {
@@ -64,13 +65,11 @@ function Header() {
                             ><button className='inline-block duration-200 hover:bg-blue-100 rounded-full cursor-pointer px-6 py-2'
                                 onClick={() => navigate(navItems.slug)}
                             >{navItems.name}
-                                    {console.log(navItems.name)}
                                 </button></Scroll>
                         </li>
 
-                        {scrollItems.map((item) =>
+                        {!hideAboutAndWork && scrollItems.map((item) =>
                             <li key={item.name} className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full cursor-pointer'>
-                                {console.log(item.name)}
                                 <Scroll
                                     to={item.slug}
                                     spy={true}

@@ -24,25 +24,44 @@ function Contact() {
                             </div>
                         </div>
 
-                        <div className=' flex flex-col items-start space-y-5 mt-10 text-white '>
-                            <div className='flex flex-row items-start justify-start space-x-4'>
-                                <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Name:</label>
-                                <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="John" required />
-                            </div>
-                            <div className='flex flex-row items-center justify-start space-x-4'>
-                                <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Email:</label>
-                                <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="John@gmail.com" required />
-                            </div>
-                            <div className='flex flex-row items-start justify-start space-x-4'>
-                                <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Contact:</label>
-                                <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="999999999" />
+                        <div className=' w-full flex flex-col items-center space-y-5 mt-10 text-white '>
+                            <div className='flex flex-col items-start'>
+                                <div className='flex flex-row items-start justify-start space-x-4'>
+                                    <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Name:</label>
+                                    <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="John" required />
+                                </div>
+                                <div className='flex flex-row items-start justify-start space-x-4'>
+                                    <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Email:</label>
+                                    <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="John@gmail.com" required />
+                                </div>
+                                <div className='flex flex-row items-start justify-start space-x-4'>
+                                    <label htmlFor="first_name" className="h-fit text-xl font-medium text-white font-spartan">Contact:</label>
+                                    <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-white rounded-lg" placeholder="999999999" />
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className='flex justify-center items-center w-full mt-28'>
+                        <div className="relative max-w-lg w-full">
+                            <div className='flex flex-col items-center'>
+                                <textarea
+                                    placeholder="Your feedback..."
+                                    className="text-black w-[80%] p-3 border rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                                ></textarea>
 
+                                <button
+                                    type="submit"
+                                    className="font-spartan mt-5 text-white bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

@@ -35,7 +35,7 @@ function Footer() {
                                     <li className="mb-4">
                                         <Link
                                             className=" text-base font-medium text-white text-[20px] "
-                                            to="/"
+                                            to="https://github.com/SMARTRON7"
                                         >
                                             Github
                                         </Link>
@@ -43,7 +43,7 @@ function Footer() {
                                     <li className="mb-4">
                                         <Link
                                             className=" text-base font-medium text-white text-[20px] "
-                                            to="/"
+                                            to="https://www.linkedin.com/in/syed-monu-abbas-59a487194/https://www.linkedin.com/in/syed-monu-abbas-59a487194/"
                                         >
                                             Linkedin
                                         </Link>
@@ -51,7 +51,7 @@ function Footer() {
                                     <li className="mb-4">
                                         <Link
                                             className=" text-base font-medium text-white text-[20px] "
-                                            to="/"
+                                            to="https://twitter.com/smartron07"
                                         >
                                             Twitter
                                         </Link>
@@ -59,7 +59,7 @@ function Footer() {
                                     <li>
                                         <Link
                                             className=" text-base font-medium text-white text-[20px] "
-                                            to="/"
+                                            to="https://www.instagram.com/syed.monu.abbas7"
                                         >
                                             Instagram
                                         </Link>
@@ -76,31 +76,15 @@ function Footer() {
                                     <li className="mb-4">
                                         <Link
                                             className=" text-base font-medium text-white text-[20px] "
-                                            to="/"
+                                            to="/home"
                                         >
                                             Home
-                                        </Link>
-                                    </li>
-                                    <li className="mb-4">
-                                        <Link
-                                            className=" text-base font-medium text-white text-[20px]  "
-                                            to="/"
-                                        >
-                                            About
-                                        </Link>
-                                    </li>
-                                    <li className="mb-4">
-                                        <Link
-                                            className=" text-base font-medium text-white text-[20px]  "
-                                            to="/"
-                                        >
-                                            Work
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             className=" text-base font-medium text-white text-[20px]  "
-                                            to="/"
+                                            to="/contact"
                                         >
                                             Contact
                                         </Link>

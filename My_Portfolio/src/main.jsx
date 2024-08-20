@@ -8,24 +8,20 @@ import Home from './pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "home",
-        element: (
-          <Home />
-        ),
+        path: '/home',
+        element: <Home />,
       },
       {
-        path: "contact",
-        element: (
-          <Contact />
-        ),
+        path: '/contact',
+        element: <Contact />,
       },
-    ]
+    ],
   },
-])
+]);
 
 
 createRoot(document.getElementById('root')).render(

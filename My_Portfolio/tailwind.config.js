@@ -19,6 +19,9 @@ export default {
       fontSize: {
         '8xl': '100px'
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/Image/Feedback.jpg')",
+      },
     },
   },
   plugins: [],

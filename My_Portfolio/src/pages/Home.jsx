@@ -82,12 +82,12 @@ function Home() {
                 <div className='w-3/4 h-3/4 flex bg-midblue rounded-[25px]'>
                     <div className='w-full h-full flex flex-col items-center justify-center'>
                         <div className=' h-fit flex flex-wrap justify-center text-white font-spartan font-bold text-2xl md:text-5xl'>Work</div>
-                        <div className='bg-white w-3/4 h-3/4 flex md:flex-row flex-col items-center justify-between overflow-auto'>
-                            <div className='bg-black md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
+                        <div className=' w-3/4 h-3/4 flex md:flex-row flex-col items-center justify-between overflow-auto'>
+                            <div className=' bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
                             </div>
-                            <div className='bg-black md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
+                            <div className='bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
                             </div>
-                            <div className='bg-black md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
+                            <div className='bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
                             </div>
                         </div>
                     </div>

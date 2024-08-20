@@ -6,10 +6,10 @@ function Footer() {
     return (
         <footer className="w-11/12 h-full py-10 bg-midpurple bg-opacity-30 rounded-[25px]">
             <div className="  z-10 mx-auto w-11/12 px-4">
-                <div className=" m-6 grid grid-flow-col">
+                <div className=" md:m-6 m-2 grid grid-flow-col space-x-5">
                     <div className=" w-full p-6 md:w-1/2 lg:w-5/12">
                         <div className="flex h-full flex-col justify-between">
-                            <div className="inline-flex mb-4 items-center text-white font-bold text-[100px] font-spartan ">
+                            <div className="inline-flex mb-4 items-center text-white font-bold text-[80px] md:text-[100px] font-spartan ">
                                 <div className='flex gap-y-0'>
                                     <ul>
                                         <li className='-m-10'>Syed</li>

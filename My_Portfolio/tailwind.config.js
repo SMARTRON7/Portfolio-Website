@@ -22,6 +22,19 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('/src/Image/Feedback.jpg')",
       },
+      keyframes: {
+        typing: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: 'black' },
+        },
+      },
+      animation: {
+        typing: 'typing 4s steps(40, end) 1s 1 normal both, blink 500ms steps(40, end) infinite',
+      }
     },
   },
   plugins: [],

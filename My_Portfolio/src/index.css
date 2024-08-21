@@ -1,3 +1,40 @@
+/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    @apply overflow-hidden whitespace-nowrap;
+    border-right: none;
+    /* Remove cursor effect */
+}
+
+.paragraph-1 {
+    animation: typing 2s steps(30, end) 0s 1 normal both;
+    /* Faster and smoother typing */
+}
+
+.paragraph-2 {
+    animation: typing 2s steps(30, end) 2s 1 normal both;
+    /* Adjusted delay for sequence */
+}
+
+.paragraph-3 {
+    animation: typing 2s steps(30, end) 4s 1 normal both;
+    /* Adjusted delay for sequence */
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}

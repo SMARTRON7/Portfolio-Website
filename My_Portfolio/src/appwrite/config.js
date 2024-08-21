@@ -14,7 +14,7 @@ export class Service {
 
     }
 
-    async createPost({ Name, slug, Email, Feebdack, userId, Phone }) {
+    async createPost({ Name, slug, Email, Feedback, Phone }) {
         try {
             return await this.databases.createDocument(
                 conf.appwriteDatabaseId,
@@ -23,8 +23,7 @@ export class Service {
                 {
                     Name,
                     Email,
-                    Feebdack,
-                    userId,
+                    Feedback,
                     Phone
                 }
             )
@@ -34,3 +33,5 @@ export class Service {
     }
 
 }
+const service = new Service()
+export default service

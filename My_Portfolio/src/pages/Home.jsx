@@ -2,24 +2,46 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Link as Scroll } from 'react-scroll'
 import Profile from '../Image/Profile.webp'
-
+import { useEffect, useState } from 'react'
 
 function Home() {
+
+    const [fadeIn, setFadeIn] = useState(false);
+
+    useEffect(() => {
+        // Trigger the fade-in effect when the component is mounted
+        setFadeIn(true);
+    }, []);
+
     const navigate = useNavigate()
+    const repos = [
+        {
+            name: "Todo List",
+            url: "https://github.com/SMARTRON7/React_Learning/tree/main/reduxToolkitTodo"
+        },
+        {
+            name: "Blog App",
+            url: "https://github.com/SMARTRON7/Blog-React-Project"
+        },
+        {
+            name: "Haikyuu Fan Page",
+            url: "https://github.com/SMARTRON7/Haikyuu-Tailwind-Test"
+        },
+    ]
 
 
     return (
-        <div>
+        <div className={`transition-opacity duration-1000 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
             <div className='mt-10 w-full h-screen flex items-center justify-center' id='home'>
                 <div className='w-3/4 h-3/4 shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] rounded-[25px] md:space-y-0 space-y-10 md:p-0 p-2'>
-                    <div className='grid items-center justify-center pr-[5%] pt-20'>
-                        <p className='text-white font-spartan text-5xl md:text-8xl font-bold'>Syed Monu Abbas</p>
-                        <p className='text-white font-spartan text-5xl md:text-8xl font-bold'>is a Frontend</p>
-                        <p className='text-white font-spartan text-5xl md:text-8xl font-bold'>Engineer!</p>
+                    <div className=' grid items-center justify-start md:justify-center pr-[5%] pt-20 shrink-0'>
+                        <p className='text-white font-spartan text-3xl md:text-7xl font-bold typing-effect paragraph-1'>Syed Monu Abbas</p>
+                        <p className='text-white font-spartan text-3xl md:text-7xl font-bold typing-effect paragraph-2'>is a Frontend</p>
+                        <p className='text-white font-spartan text-3xl md:text-7xl font-bold typing-effect paragraph-3'>Engineer!</p>
                     </div>
-                    <div className='grid justify-end pr-[27.9%]'>
-                        <p className='text-white font-spartan text-[20px] font-semibold'>Check out my work and contact me for more</p>
-                        <p className='text-white font-spartan text-[20px] font-semibold'>information</p>
+                    <div className='grid justify-start md:justify-end pr-[27.9%]'>
+                        <p className='text-white font-spartan text-[15px] md:text-[20px] font-semibold'>Check out my work and contact me for more</p>
+                        <p className='text-white font-spartan text-[15px] md:text-[20px] font-semibold'>information</p>
                     </div>
                     <div className=' bg-opacity-40 pt-5 flex items-center justify-center text-white font-spartan font-light text-[20px] md:text-[26.26px] space-x-[20%] md:space-x-32'>
                         <Scroll
@@ -83,12 +105,14 @@ function Home() {
                     <div className='w-full h-full flex flex-col items-center justify-center'>
                         <div className=' h-fit flex flex-wrap justify-center text-white font-spartan font-bold text-2xl md:text-5xl'>Work</div>
                         <div className=' w-3/4 h-3/4 flex md:flex-row flex-col items-center justify-between overflow-auto'>
-                            <div className=' bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
-                            </div>
-                            <div className='bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
-                            </div>
-                            <div className='bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px]'>
-                            </div>
+                            {repos.map((item) =>
+                                <div key={item.name} className=' bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px] flex items-center justify-center text-white font-spartan
+                                                                    md:text-2xl text-lg transition-transform transform hover:scale-105 hover:shadow-lg'>
+                                    <Link to={item.url}>
+                                        {item.name}
+                                    </Link>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

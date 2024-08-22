@@ -105,7 +105,7 @@ function Contact({ post }) {
 
                                     <button
                                         type="submit"
-                                        className="font-spartan mt-5 text-black  dark:text-white bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black"
+                                        className="font-spartan mt-5 text-black  dark:text-white bg-babypink dark:bg-white dark:bg-opacity-50 bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 dark:hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black"
 
                                     >
                                         Submit

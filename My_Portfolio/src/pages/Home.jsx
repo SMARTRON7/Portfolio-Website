@@ -51,13 +51,13 @@ function Home() {
                             offset={-50}
                             duration={500}>
                             <button
-                                className='bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
+                                className='bg-babypink dark:bg-white dark:bg-opacity-50 bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
                             >
                                 About
                             </button>
                         </Scroll>
                         <button
-                            className='bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
+                            className='bg-babypink dark:bg-white bg-opacity-50 dark:bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
                             onClick={() => navigate("/contact")}>
                             Contact
                         </button>
@@ -90,7 +90,7 @@ function Home() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <button className='bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
+                                    <button className='bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 dark:bg-opacity-50 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
                                     >
                                         Resume!
                                     </button>
@@ -106,7 +106,7 @@ function Home() {
                         <div className=' h-fit flex flex-wrap justify-center text-black dark:text-white font-spartan font-bold text-2xl md:text-5xl'>Work</div>
                         <div className=' w-3/4 h-3/4 flex md:flex-row flex-col items-center justify-between overflow-auto'>
                             {repos.map((item) =>
-                                <div key={item.name} className=' bg-babypink dark:bg-white bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px] flex items-center justify-center text-black dark:text-white font-spartan
+                                <div key={item.name} className=' bg-babypink dark:bg-white dark:bg-opacity-50 bg-opacity-30 md:w-1/4 w-1/2 h-1/2 m-2 rounded-[25px] flex items-center justify-center text-black dark:text-white font-spartan
                                                                     md:text-2xl text-lg transition-transform transform hover:scale-105 hover:shadow-lg'>
                                     <Link to={item.url}>
                                         {item.name}

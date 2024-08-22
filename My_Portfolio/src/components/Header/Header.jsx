@@ -67,7 +67,7 @@ function Header() {
                                 smooth={true}
                                 offset={-50}
                                 duration={500}
-                            ><button className='inline-block duration-200 hover:bg-pink-200 hover:bg-opacity-50 dark:hover:bg-blue-100 rounded-full cursor-pointer px-6 py-2'
+                            ><button className='inline-block duration-200 hover:bg-pink-200 hover:bg-opacity-50 dark:hover:bg-opacity-50 dark:hover:bg-blue-100 rounded-full cursor-pointer px-6 py-2'
                                 onClick={() => navigate(navItems.slug)}
                             >{navItems.name}
                                 </button></Scroll>

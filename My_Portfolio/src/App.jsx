@@ -2,6 +2,7 @@ import { Header, Footer } from "./components"
 import { Outlet, useNavigate } from "react-router-dom"
 import ScrollToTop from "./components/ScrollToTop"
 import { useEffect, useState } from "react";
+import { ThemeProvider } from './contexts/theme'
 
 function App() {
 
@@ -22,31 +23,49 @@ function App() {
     return () => clearTimeout(timer);
   }, [navigate]);
 
+  const [themeMode, setThemeMode] = useState("light")
+
+  const lightTheme = () => {
+    setThemeMode("light")
+  }
+  const darkTheme = () => {
+    setThemeMode("dark")
+  }
+
+  // actual change in theme
+
+  useEffect(() => {
+    document.querySelector("html").classList.remove("light", "dark")
+    document.querySelector("html").classList.add(themeMode)
+  }, [themeMode])
+
   return (
     <div>
-      <div className='w-full min-h-screen flex flex-wrap content-between bg-darkblue'>
-        <div className='w-full block mt-3'>
-          <ScrollToTop />
-          <div className="w-full flex justify-center ">
-            <Header />
-          </div>
-          <main className="flex-grow">
-            {loading ? (
-              <div className="flex items-center justify-center h-screen bg-gray-900 absolute inset-0 z-50">
-                <div
-                  className={`w-16 h-16 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin transition-opacity duration-500 ${fadeOut ? 'opacity-0' : 'opacity-100'
-                    }`}
-                ></div>
-              </div>
-            ) : (
-              <Outlet />
-            )}
-          </main>
-          <div className="w-full flex justify-center">
-            <Footer />
+      <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
+        <div className='w-full min-h-screen flex flex-wrap content-between bg-skintone dark:bg-darkblue'>
+          <div className='w-full block mt-3'>
+            <ScrollToTop />
+            <div className="w-full flex justify-center ">
+              <Header />
+            </div>
+            <main className="flex-grow">
+              {loading ? (
+                <div className="flex items-center justify-center h-screen bg-gray-900 absolute inset-0 z-50">
+                  <div
+                    className={`w-16 h-16 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin transition-opacity duration-500 ${fadeOut ? 'opacity-0' : 'opacity-100'
+                      }`}
+                  ></div>
+                </div>
+              ) : (
+                <Outlet />
+              )}
+            </main>
+            <div className="w-full flex justify-center">
+              <Footer />
+            </div>
           </div>
         </div>
-      </div>
+      </ThemeProvider>
     </div>
   )
 }

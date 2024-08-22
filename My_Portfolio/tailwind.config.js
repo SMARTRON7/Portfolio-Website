@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -11,7 +12,10 @@ export default {
         midblue: "#0C175F",
         midpurple: "#8C89E7",
         lightpurple: "#E7E9F5",
-        lightbeige: "#D1D1D1"
+        lightbeige: "#D1D1D1",
+        babypink: "#D46792",
+        skintone: "#FAF0E6",
+        darkskin: "#EADACA"
       },
       fontFamily: {
         'spartan': ['"League Spartan"', 'sans-serif'],

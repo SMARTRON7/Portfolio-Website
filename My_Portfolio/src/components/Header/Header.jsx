@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { Link as Scroll } from 'react-scroll'
-import { Container, Logo } from '../index'
+import { Container, Logo, ThemeBtn } from '../index'
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react'
@@ -37,7 +37,7 @@ function Header() {
     }, [pathname]);
 
 
-    const classes = `fixed header-section d-none flex bg-white py-3 w-11/12 shadow rounded-[19px]`
+    const classes = `fixed header-section d-none flex bg-babypink dark:bg-white py-3 w-11/12 shadow rounded-[19px]`
 
     const [isOpen, setIsOpen] = useState(false)
     const toggleNavBar = () => {
@@ -54,7 +54,12 @@ function Header() {
                             <Logo />
                         </Link>
                     </div >
-                    <ul className='hidden md:flex ml-auto items-center text-black font-spartan font-light text-[26.26px]'>
+                    <div className='flex -flex-wrap items-center justify-center'>
+                        <div className="w-full max-w-sm mx-auto flex justify-end">
+                            <ThemeBtn />
+                        </div>
+                    </div>
+                    <ul className='hidden md:flex ml-auto items-center text-skintone dark:text-black font-spartan font-light text-[26.26px]'>
                         <li>
                             <Scroll
                                 to={navItems.slug}
@@ -62,14 +67,14 @@ function Header() {
                                 smooth={true}
                                 offset={-50}
                                 duration={500}
-                            ><button className='inline-block duration-200 hover:bg-blue-100 rounded-full cursor-pointer px-6 py-2'
+                            ><button className='inline-block duration-200 hover:bg-pink-200 hover:bg-opacity-50 dark:hover:bg-blue-100 rounded-full cursor-pointer px-6 py-2'
                                 onClick={() => navigate(navItems.slug)}
                             >{navItems.name}
                                 </button></Scroll>
                         </li>
 
                         {!hideAboutAndWork && scrollItems.map((item) =>
-                            <li key={item.name} className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full cursor-pointer'>
+                            <li key={item.name} className='inline-block px-6 py-2 duration-200 hover:bg-pink-200 hover:bg-opacity-50 dark:hover:bg-blue-100 rounded-full cursor-pointer'>
                                 <Scroll
                                     to={item.slug}
                                     spy={true}
@@ -82,7 +87,7 @@ function Header() {
                         <li>
                             <button
                                 onClick={() => navigate(navItem.slug)}
-                                className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+                                className='inline-bock px-6 py-2 duration-200 hover:bg-pink-200 hover:bg-opacity-50 dark:hover:bg-blue-100 rounded-full'
                             >{navItem.name}
                             </button>
                         </li>

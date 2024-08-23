@@ -80,16 +80,16 @@ function Contact({ post }) {
                             <div className=' w-full flex flex-col items-center mt-10 text-black  dark:text-white '>
                                 <div className='flex flex-col items-start space-y-10'>
                                     <div className='flex flex-row items-start justify-start space-x-4'>
-                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-whitee font-spartan">Name:</label>
-                                        <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-black  dark:text-white rounded-lg" placeholder="John" required {...register("Name", { required: true })} />
+                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan mr-4">Name:</label>
+                                        <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black  dark:text-white rounded-lg" placeholder="John" required {...register("Name", { required: true })} />
                                     </div>
                                     <div className='flex flex-row items-start justify-start space-x-4'>
-                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-whitefont-spartan">Email:</label>
-                                        <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-black  dark:text-white rounded-lg" placeholder="John@gmail.com" required {...register("Email", { required: true })} />
+                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan mr-4">Email:</label>
+                                        <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black  dark:text-white rounded-lg" placeholder="John@gmail.com" required {...register("Email", { required: true })} />
                                     </div>
                                     <div className='flex flex-row items-start justify-start space-x-4'>
                                         <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan">Contact:</label>
-                                        <input type="text" id="first_name" className="h-fit bg-transparent underline !outline-none text-black  dark:text-white rounded-lg" placeholder="999999999" {...register("Phone", { required: false })} />
+                                        <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black  dark:text-white rounded-lg" placeholder="999999999" {...register("Phone", { required: false })} />
                                     </div>
                                 </div>
                             </div>

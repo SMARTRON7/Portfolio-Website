@@ -4,7 +4,7 @@ import Logo from '../Logo'
 
 function Footer() {
     return (
-        <footer className="w-11/12 h-full py-10 dark:bg-midpurple bg-pink-900 bg-opacity-30 rounded-[25px]">
+        <footer className="w-full h-full py-10 dark:bg-midpurple bg-pink-900 bg-opacity-30 rounded-[25px]">
             <div className="  z-10 mx-auto w-11/12 px-4">
                 <div className=" md:m-6 m-2 grid grid-flow-col space-x-5">
                     <div className=" w-full p-6 md:w-1/2 lg:w-5/12">

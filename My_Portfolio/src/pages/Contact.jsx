@@ -84,8 +84,8 @@ function Contact({ post }) {
                                         <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black  dark:text-white rounded-lg" placeholder="John" required {...register("Name", { required: true })} />
                                     </div>
                                     <div className='flex flex-row items-start justify-start space-x-4'>
-                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan mr-4">Email:</label>
-                                        <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black  dark:text-white rounded-lg" placeholder="John@gmail.com" required {...register("Email", { required: true })} />
+                                        <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan mr-5">Email:</label>
+                                        <input type="text" id="first_name" className="h-fit pl-2 mt-1 text-black dark:text-white rounded-lg" placeholder="John@gmail.com" required {...register("Email", { required: true })} />
                                     </div>
                                     <div className='flex flex-row items-start justify-start space-x-4'>
                                         <label htmlFor="first_name" className="h-fit text-xl font-medium text-black  dark:text-white font-spartan">Contact:</label>

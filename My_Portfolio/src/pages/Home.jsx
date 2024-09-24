@@ -85,7 +85,7 @@ function Home() {
                                         Here are some of my professional skills!
                                     </p>
                                     <ul className='pt-8 pl-5'>
-                                        <li className='list-disc'>HTML, CSS, Tailwind CSS, Javascript, Node, React, Git and Github</li>
+                                        <li className='list-disc'>HTML, CSS, Tailwind CSS, Javascript, Node, React, Figma, Git and Github</li>
                                         <li className='list-disc'>Great at communication and problem solving!</li>
                                     </ul>
                                 </div>

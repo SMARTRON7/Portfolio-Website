@@ -92,7 +92,12 @@ function Home() {
                                 <div>
                                     <button className='bg-babypink dark:bg-white bg-opacity-50 inline-block px-3 py-1 md:px-6 md:py-2 duration-200 dark:bg-opacity-50 hover:bg-pink-200 dark:hover:bg-blue-100 hover:text-black rounded-full cursor-pointer shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px] border-black'
                                     >
-                                        Resume!
+                                        <a
+                                            href="/Syed Monu Abbas Resume.pdf"
+                                            download="Syed Monu Abbas Resume.pdf"
+                                        >
+                                            Download Resume!
+                                        </a>
                                     </button>
                                 </div>
                             </div>

@@ -119,8 +119,8 @@ function Contact({ post }) {
             </div>
             {showPopup && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-midblue p-4 rounded shadow-lg text-center">
-                        <p className="text-white font-bold">Thanks for the feedback!</p>
+                    <div className="dark:bg-midblue bg-skintone p-4 rounded shadow-lg text-center">
+                        <p className="dark:text-white text-black font-bold">Thanks for the feedback!</p>
                     </div>
                 </div>
             )}

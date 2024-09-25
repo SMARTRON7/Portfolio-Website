@@ -37,7 +37,7 @@ function Header() {
     }, [pathname]);
 
 
-    const classes = `fixed header-section d-none flex bg-babypink dark:bg-white py-3 w-11/12 shadow rounded-[19px]`
+    const classes = `fixed header-section d-none flex bg-babypink dark:bg-white py-3 md:w-11/12 shadow rounded-[19px]`
 
     const [isOpen, setIsOpen] = useState(false)
     const toggleNavBar = () => {

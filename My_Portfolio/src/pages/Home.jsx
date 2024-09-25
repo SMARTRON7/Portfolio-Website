@@ -64,7 +64,7 @@ function Home() {
                     </div>
                     <div className='flex items-center justify-center pt-5 md:pt-10'>
                         <Link to="https://github.com/SMARTRON7"
-                            className="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 bg-babypink dark:bg-darkblue px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:w-12 after:h-12 after:content[''] dark:after:bg-sky-900 after:bg-pink-700 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
+                            className="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 bg-babypink dark:bg-darkblue border text-gray-50 text-base font-bold rounded-lg overflow-hidden p-2 after:flex hover:after:animate-pulse"
                         >
                             <svg
                                 className="w-6 h-6 fill-neutral-50"
